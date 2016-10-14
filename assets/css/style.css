@@ -41,7 +41,7 @@ Tags: HTML, Template, Coming Soon, Kite
 
 /* 1 - Import Google Font
 ---------------------------------------------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Merienda');
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700);
 /* 1 - Import Google Font End 
 ---------------------------------------------------------------------- */
@@ -89,7 +89,8 @@ a:focus{
 	overflow:hidden;
 }
 .section-name{
-	font-weight:700;
+	font-weight:600;
+    font-family: 'Covered By Your Grace', cursive;
 	text-align:center;
 	text-transform:uppercase;
 	margin:0;
@@ -473,7 +474,7 @@ a:focus{
 .site-title{
 	text-align:center;
 	font-size:66px;
-	font-family:'Pacifico';
+	font-family:'Merienda', cursive;
 	margin:0 0 50px 0;
 	padding-bottom:50px;
 	position:relative;

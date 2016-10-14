@@ -74,9 +74,9 @@ jQuery(document).ready(function($) {
             'min':      0,
             'sec':      3
 		},
-		omitWeeks: true
+         omitWeeks: true
 
-	    });
+	});
 
     /* Time Countdown End
 	-------------------------------------------------------------------*/
@@ -84,28 +84,20 @@ jQuery(document).ready(function($) {
 
 
 
-	/* Next Section   
+    /* Next Section   
 	-------------------------------------------------------------------*/
-	$('.next-section .go-to-about').click(function() {
-    	$('html,body').animate({scrollTop:$('#about').offset().top}, 1000);
-  	});
-  	$('.next-section .go-to-subscribe').click(function() {
-    	$('html,body').animate({scrollTop:$('#subscribe').offset().top}, 1000);
-  	});
-  	$('.next-section .go-to-contact').click(function() {
-    	$('html,body').animate({scrollTop:$('#contact').offset().top}, 1000);
-  	});
-  	$('.next-section .go-to-page-top').click(function() {
-    	$('html,body').animate({scrollTop:$('#page-top').offset().top}, 1000);
-  	});
+	$('.next-section .go-to-about').click(function () {$('html,body').animate({ scrollTop: $('#about').offset().top }, 1000);});
+	$('.next-section .go-to-subscribe').click(function () {$('html,body').animate({ scrollTop: $('#subscribe').offset().top }, 1000);});
+	$('.next-section .go-to-contact').click(function () {$('html,body').animate({ scrollTop: $('#contact').offset().top }, 1000);});
+	$('.next-section .go-to-page-top').click(function () {$('html,body').animate({ scrollTop: $('#page-top').offset().top }, 1000);});
 
-  	/* Next Section End
+    /* Next Section End
 	-------------------------------------------------------------------*/
 
 
 
 
-	      /* Subscribe
+    /* Subscribe
     -------------------------------------------------------------------*/
     $(".news-letter").ajaxChimp({
         callback: mailchimpResponse,
@@ -138,15 +130,15 @@ jQuery(document).ready(function($) {
 
         //validate
 
-        if (first_nameVal == '' || first_nameVal == 'First Name *') {
+        if (first_nameVal === '' || first_nameVal === 'First Name *') {
             $('.first-name-error').html('<i class="fa fa-exclamation"></i> First name is required.').fadeIn();
             return false;
         }
-        if (last_nameVal == '' || last_nameVal == 'Last Name *') {
+        if (last_nameVal === '' || last_nameVal === 'Last Name *') {
             $('.last-name-error').html('<i class="fa fa-exclamation"></i> Last name is required.').fadeIn();
             return false;
         }
-        if (emailVal == "" || emailVal == "Email Address *") {
+        if (emailVal === "" || emailVal === "Email Address *") {
 
             $('.contact-email-error').html('<i class="fa fa-exclamation"></i> Your email address is required.').fadeIn();
             return false;
@@ -156,11 +148,11 @@ jQuery(document).ready(function($) {
             $('.contact-email-error').html('<i class="fa fa-exclamation"></i> Invalid email address.').fadeIn();
             return false;
         }
-         if (contact_subjectVal == '' || contact_subjectVal == 'Subject *') {
+         if (contact_subjectVal === '' || contact_subjectVal === 'Subject *') {
             $('.contact-subject-error').html('<i class="fa fa-exclamation"></i> Subject is required.').fadeIn();
             return false;
         }
-        if (messageVal == '' || messageVal == 'Message *') {
+        if (messageVal === '' || messageVal === 'Message *') {
             $('.contact-message-error').html('<i class="fa fa-exclamation"></i> Please provide a message.').fadeIn();
             return false;
         }
