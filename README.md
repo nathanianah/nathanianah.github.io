@@ -3,7 +3,7 @@ _nathanianah.github.io_
 
 ####To Do:
 1. Staff Information (Speaker TBD)
-2. Google Forms (Registration)
+2. Google Forms (Registration) (Jesse will look into this)
 3. Create Video Section
 4. Select Background Images
 
