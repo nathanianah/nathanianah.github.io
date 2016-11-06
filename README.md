@@ -1,13 +1,13 @@
 # JCA Congregational Retreat Microsite
 _nathanianah.github.io_
 
-**To Do**
+**To Do:**
 1. Staff Information (Speaker TBD)
 2. Google Forms (Registration)
 3. Create Video Section
 4. Select Background Images
 
-**Bugs**
+**Bugs:**
 1. "Register" image not appearing
 2. Need to clean up code
 
