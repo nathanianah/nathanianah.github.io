@@ -25,7 +25,7 @@ Tags: HTML, Template, Coming Soon, Kite
 *  3 - Main Menu 
 *  4 - Page Top Section   
 *  5 - About Us Section
-*  6 - Subscribe Section
+*  6 - Register Section
 *  7 - Contact Section
 *  8 - Footer Section  
 *  9 - Media Query 
@@ -717,7 +717,7 @@ a:focus{
 
 
 
-/* 6 - Subscribe Section
+/* 6 - Register Section
 ---------------------------------------------------------------------- */
 
 form.news-letter{
@@ -744,20 +744,20 @@ form.news-letter .btn{
 form.news-letter .btn:hover{
 	color:#3498db;
 }
-#subscribe-loading {
+#register-loading {
 	display: none;
 	line-height: 45px;
 	cursor: inherit;
 }
-#subscribe-loading:hover{
+#register-loading:hover{
 	color: inherit;
 }
-.subscribe-message{
+.register-message{
 	text-align: center;
 	font-size: 1.125em;
 }
 
-.subscribe-error{
+.register-error{
 	color: #ffffff;
 	position: absolute;
 	background: rgba(52, 152, 219,1);
@@ -767,7 +767,7 @@ form.news-letter .btn:hover{
 	padding: 5px 10px;
 	border-radius: 3px;
 }
-.subscribe-error:after{
+.register-error:after{
 	position: absolute;
 	content: "";
 	width: 0;
@@ -778,7 +778,7 @@ form.news-letter .btn:hover{
 	left: 25px;
 	bottom: -24px;
 }
-/* 6 - Subscribe Section End 
+/* 6 - Register Section End 
 ---------------------------------------------------------------------- */
 
 
