@@ -20,6 +20,14 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<![endif]-->
 
+    <style>
+       #map {
+        height: 400px;
+        <!--width: 50%;-->
+        <!--margin-left: auto;-->
+        <!--margin-right: auto;-->
+       }
+    </style>
 </head>
 <body>
 
@@ -78,7 +86,7 @@
 					</span>
 				</h3><!-- /.section-name -->
 				<h2 class="section-title">
-					January 13, 2017
+					January 13-15, 2017
 				</h2><!-- /.Section-title  -->
 				<div id="time_countdown" class="time-count-container">
 
@@ -173,8 +181,6 @@
 
 				</div><!-- /.section-description -->
 
-				<!--TODO Google Forms-->
-
 				<div class="next-section">
 					<a class="go-to-contact"><span></span></a>
 				</div><!-- /.next-section -->
@@ -187,6 +193,7 @@
 
 	<!-- About Us Section -->
 	<section id="about" class="section-style parallax-bg" data-background-image="images/background/about-us.jpg">
+
 		<div class="pattern height-resize"> 
 			<div class="container">
 				<h3 class="section-name">
@@ -198,8 +205,8 @@
 					Meet the Staff
 				</h2><!-- /.Section-title  -->
 				<p class="section-description">
-					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-				</p><!-- /.section-description -->
+					Speaker Goes Here
+                </p><!-- /.section-description -->
 
 				<div class="team-container">
 					<div class="row">
@@ -289,7 +296,33 @@
 					
                     <!--TODO Link to Facebook Pages/Website... any other suggestions?-->
 
-					
+                    <!-- google map API -->
+                    <!--<head>-->
+                                    <!--</head>-->
+                                    <!--<body>-->
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">Address Goes Here</div>
+                                            <div class="col-sm-8" id="map"></div>
+                                        </div>
+                                    </div>
+                                    <script>
+                      function initMap() {
+                        var uluru = {lat: 33.4339275, lng: -83.8278857};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                          zoom: 9,
+                          center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                          position: uluru,
+                          map: map
+                        });
+                      }
+                    </script>
+                    <script async defer
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWN4JT0Paq3PoczWko0wT8Zcw14KWGj6Q&callback=initMap">
+                    </script>
+                    <!-- google map API end -->
 
 					<div class="next-section">
 						<a class="go-to-page-top"><span></span></a>
