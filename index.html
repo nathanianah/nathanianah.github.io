@@ -88,7 +88,7 @@
 				<!-- Retreat Video -->
 				<br>
 				<div style="text-align: center; margin-bottom: 1em">
-					<iframe width="700" height="394" src="https://www.youtube.com/embed/Wlz4vFuNIxw" frameborder="0" allowfullscreen></iframe>
+					<iframe id="promovid" src="https://www.youtube.com/embed/Wlz4vFuNIxw" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<h2 class="section-title">
 					January 13-15, 2017
@@ -368,7 +368,31 @@
 				$(window).load(function(){
 					$("#page-top").parallax("50%", 0.2);
 					$("#register").parallax("50%", 0.2);
-				})
+
+                    var video = $("#promovid");
+                    if ($(window).width() < 650) {
+                        video.width($(window).width() - 40);
+                    }
+                    else if ($(window).width() / 2 < 650 ) {
+                        video.width(600);
+                    } else {
+                        video.width($(window).width() / 2);
+                    }
+                    video.height(video.width() * 9 / 16);
+				});
+
+                $(window).resize(function() {
+                    var video = $("#promovid");
+                    if ($(window).width() < 650) {
+                        video.width($(window).width() - 40);
+                    }
+                    else if ($(window).width() / 2 < 650 ) {
+                        video.width(600);
+                    } else {
+                        video.width($(window).width() / 2);
+                    }
+                    video.height(video.width() * 9 / 16);
+                });
 			})
 		</script>
 
