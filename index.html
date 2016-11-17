@@ -71,7 +71,7 @@
 				<!-- Retreat Video -->
 				<br>
 				<div style="text-align: center; margin-bottom: 1em">
-					<iframe id="promovid" src="https://www.youtube.com/embed/Wlz4vFuNIxw?autoplay=1" frameborder="0" allowfullscreen></iframe>
+					<iframe width="9000" height="9000" id="promovid" src="https://www.youtube.com/embed/Wlz4vFuNIxw?autoplay=1" frameborder="0" allowfullscreen></iframe>
 				</div>
                 <hr>
 				<h2 class="section-title">
@@ -360,10 +360,10 @@
                     if ($(window).width() < 650) {
                         video.width($(window).width() - 40);
                     }
-                    else if ($(window).width() / 2 < 650 ) {
+                    else if ($(window).width() * 2 / 3 < 650 ) {
                         video.width(600);
                     } else {
-                        video.width($(window).width() / 2);
+                        video.width(800);
                     }
                     video.height(video.width() * 9 / 16);
 				});
@@ -373,10 +373,10 @@
                     if ($(window).width() < 650) {
                         video.width($(window).width() - 40);
                     }
-                    else if ($(window).width() / 2 < 650 ) {
+                    else if ($(window).width() * 2 / 3 < 650 ) {
                         video.width(600);
                     } else {
-                        video.width($(window).width() / 2);
+                        video.width(800);
                     }
                     video.height(video.width() * 9 / 16);
                 });
