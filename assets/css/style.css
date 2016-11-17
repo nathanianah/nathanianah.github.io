@@ -42,7 +42,8 @@ Tags: HTML, Template, Coming Soon, Kite
 /* 1 - Import Google Font
 ---------------------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Merienda');
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700);
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700');
+@import url('https://fonts.googleapis.com/css?family=Bitter');
 /* 1 - Import Google Font End 
 ---------------------------------------------------------------------- */
 
@@ -119,7 +120,8 @@ a:focus{
 	text-align:center;
 	text-transform:uppercase;
 	font-weight:300;
-	font-size:80px;
+	font-size:60px;
+	font-family: 'Bitter', serif;
 }
 .section-subtitle{
 	text-align:center;
