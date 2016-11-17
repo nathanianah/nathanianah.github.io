@@ -475,24 +475,33 @@ a:focus{
 	text-align:center;
 	font-size:66px;
 	font-family:'Merienda', cursive;
-	margin:0 0 50px 0;
-	padding-bottom:50px;
+	margin:0 0 0 0;
+	padding-bottom:30px;
 	position:relative;
 }
-.site-title:before,
-.site-title:after{
+.site-subtitle{
+	text-align:center;
+	font-size:36px;
+	font-family:'Merienda', cursive;
+	margin:0 0 0 0;
+	padding-bottom:30px;
+	position:relative;
+}
+.site-subtitle:before,
+.site-subtitle:after{
 	content:"";
 	width:100px;
 	height:10px;
 	left:50%;
 	margin-left:-50px;
 	border-bottom:1px double #fff;
+	padding-bottom: 50px;
 	position:absolute;
 }
-.site-title:before{
+.site-subtitle:before{
 	bottom:0;
 }
-.site-title:after{
+.site-subtitle:after{
 	bottom:2px;
 }
 #page-top .section-name span:before,
