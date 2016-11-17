@@ -7,9 +7,9 @@ _nathanianah.github.io_
 3. Select Background Images
 
 #####Team:
--Nathania Nah
--Micah Jo
--Jesse Huang
--Brian Lee
+*Nathania Nah
+*Micah Jo
+*Jesse Huang
+*Brian Lee
 
 ######The template was copied/pasted from a variety of sources, so much of the code and files are irrelevant/unnecessary/need to be pruned.
