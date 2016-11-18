@@ -76,7 +76,7 @@ a:focus{
 
 .pattern{
 	background:rgba(0,0,0,.5) url(../images/pattern.png);
-	padding-top:100px;
+	padding-top:50px;
 }
 .parallax-bg{
 	background-attachment: fixed;
@@ -339,7 +339,7 @@ a:focus{
 ------------------------------------------ */
 
 .pattern.height-resize{
-	padding-top: 40px;
+	padding-top: 10px;
 }
 .height-resize .time-count-container{
 	margin-top: 20px !important;
