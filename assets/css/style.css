@@ -596,6 +596,9 @@ a:focus{
 .team-container .col-sm-4{
 	padding:60px 15px 0 15px;
 }
+.team-container .col-sm-8{
+	padding:60px 15px 0 15px;
+}
 .team-container .team-member{
 	max-width:245px;
 	margin:auto;
