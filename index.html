@@ -20,335 +20,309 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<![endif]-->
 
-    <style>
-       #map {
-        height: 400px;
-        <!--width: 50%;-->
-        <!--margin-left: auto;-->
-        <!--margin-right: auto;-->
-       }
-    </style>
+	<style>
+		#map {
+            height: 400px;
+		    width: 50%;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+	</style>
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 </head>
 <body>
 
-	<!-- Main Menu -->
-	<div id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
-		
-		<div class="navbar-header">
-			<!-- responsive navigation -->
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<i class="fa fa-bars"></i>
-			</button> <!-- /.navbar-toggle -->
-			
-		</div> <!-- /.navbar-header -->
+<!-- Main Menu -->
+<div id="main-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
 
-		<nav class="collapse navbar-collapse">
-			<!-- Main navigation -->
-			<ul id="headernavigation" class="nav navbar-nav">
-				<li class="active"><a href="#page-top">Home</a></li>	
-				<li><a href="#register">Register</a></li>	
-				<li><a href="#about">Staff</a></li>	
-				<li><a href="#contact">Contact & Location Information</a></li>
-			</ul> <!-- /.nav .navbar-nav -->
-		</nav> <!-- /.navbar-collapse  -->
-	</div><!-- /#main-menu -->
-	<!-- Main Menu End -->
-	
+	<div class="navbar-header">
+		<!-- responsive navigation -->
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<i class="fa fa-bars"></i>
+		</button> <!-- /.navbar-toggle -->
 
-	<!-- Page Top Section -->
-	<section id="page-top" class="section-style parallax-bg" data-background-image="images/background/page-top.jpg">
-		<div class="pattern height-resize">
-			<div class="container">
-				<h1 class="site-title">
-					Congregational Retreat
-				</h1><!-- /.site-title -->
-				<h3 class="site-subtitle">
+	</div> <!-- /.navbar-header -->
+
+	<nav class="collapse navbar-collapse">
+		<!-- Main navigation -->
+		<ul id="headernavigation" class="nav navbar-nav">
+			<li class="active"><a href="#page-top">Home</a></li>
+			<li><a href="#register">Register</a></li>
+			<li><a href="#about">Speaker</a></li>
+			<li><a href="#contact">Contact & Location Information</a></li>
+		</ul> <!-- /.nav .navbar-nav -->
+	</nav> <!-- /.navbar-collapse  -->
+</div><!-- /#main-menu -->
+<!-- Main Menu End -->
+
+
+<!-- Page Top Section -->
+<section id="page-top" class="section-style parallax-bg" data-background-image="images/background/page-top.jpg">
+	<div class="pattern height-resize">
+		<div class="container">
+			<h1 class="site-title">
+				Congregational Retreat
+			</h1><!-- /.site-title -->
+			<h3 class="site-subtitle">
 					<span>
 						Journey Church of Atlanta
 					</span>
-				</h3><!-- /.section-name -->
-				<!-- Retreat Video -->
-				<br>
-                <div style="text-align: center; margin-bottom: 1em"> <!-- Retreat video div -->
-					<iframe id="promovid" src="https://www.youtube.com/embed/Wlz4vFuNIxw?autoplay=1" frameborder="0" allowfullscreen></iframe>
-                </div> <!-- end retreat video -->
-                <hr>
-				<h2 class="section-title">
-					January 13-15, 2017
-				</h2><!-- /.Section-title  -->
-				<h2 class="section-subtitle">
-					Georgia FFA Center
-				</h2>
-				<div id="time_countdown" class="time-count-container">
+			</h3><!-- /.section-name -->
+			<!-- Retreat Video -->
+			<br>
+			<div style="text-align: center; margin-bottom: 1em">
+				<iframe id="promovid" src="https://www.youtube.com/embed/Wlz4vFuNIxw?autoplay=1" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<hr>
+			<h2 class="section-title">
+				January 13-15, 2017
+			</h2><!-- /.Section-title  -->
+			<h2 class="section-subtitle">
+				Georgia FFA Center
+			</h2>
+			<div id="time_countdown" class="time-count-container">
 
-					<div class="col-sm-3">
-						<div class="time-box">
-							<div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
+				<div class="col-sm-3">
+					<div class="time-box">
+						<div class="time-box-inner dash days_dash animated" data-animation="rollIn" data-animation-delay="300">
 								<span class="time-number">
 									<span class="digit">0</span>
 									<span class="digit">0</span>
 									<span class="digit">0</span>
 								</span>
-								<span class="time-name">Days</span>
-							</div>
+							<span class="time-name">Days</span>
 						</div>
 					</div>
+				</div>
 
-					<div class="col-sm-3">
-						<div class="time-box">
-							<div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
-								<span class="time-number">
-									<span class="digit">0</span>
-									<span class="digit">0</span>	
-								</span>
-								<span class="time-name">Hours</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-3">
-						<div class="time-box">
-							<div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
+				<div class="col-sm-3">
+					<div class="time-box">
+						<div class="time-box-inner dash hours_dash animated" data-animation="rollIn" data-animation-delay="600">
 								<span class="time-number">
 									<span class="digit">0</span>
 									<span class="digit">0</span>
 								</span>
-								<span class="time-name">Minutes</span>
-							</div>
+							<span class="time-name">Hours</span>
 						</div>
 					</div>
+				</div>
 
-					<div class="col-sm-3">
-						<div class="time-box">
-							<div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
+				<div class="col-sm-3">
+					<div class="time-box">
+						<div class="time-box-inner dash minutes_dash animated" data-animation="rollIn" data-animation-delay="900">
 								<span class="time-number">
 									<span class="digit">0</span>
 									<span class="digit">0</span>
 								</span>
-								<span class="time-name">Seconds</span>
-							</div>
+							<span class="time-name">Minutes</span>
 						</div>
 					</div>
-					
-				</div><!-- /.time-count-container -->
+				</div>
 
-				<p class="time-until">
-					<span>Time Until Launch</span>
-				</p><!-- /.time-until -->
+				<div class="col-sm-3">
+					<div class="time-box">
+						<div class="time-box-inner dash seconds_dash animated" data-animation="rollIn" data-animation-delay="1200">
+								<span class="time-number">
+									<span class="digit">0</span>
+									<span class="digit">0</span>
+								</span>
+							<span class="time-name">Seconds</span>
+						</div>
+					</div>
+				</div>
+
+			</div><!-- /.time-count-container -->
+
+			<p class="time-until">
+				<span>Time Until Launch</span>
+			</p><!-- /.time-until -->
 
 
 
-				<div class="next-section">
-					<a class="go-to-about"><span></span></a>
-				</div><!-- /.next-section -->
-				
-			</div><!-- /.container -->
-		</div><!-- /.pattern -->		
-	</section><!-- /#page-top -->
-	<!-- Page Top Section  End -->
+			<div class="next-section">
+				<a class="go-to-about"><span></span></a>
+			</div><!-- /.next-section -->
 
-	<!-- Register Section -->
-	<section id="register" class="section-style parallax-bg" data-background-image="images/background/register.jpg">
-		<div class="pattern height-resize">
-			<div class="container">
-				<h3 class="section-name">
+		</div><!-- /.container -->
+	</div><!-- /.pattern -->
+</section><!-- /#page-top -->
+<!-- Page Top Section  End -->
+
+<!-- Register Section -->
+<section id="register" class="section-style parallax-bg" data-background-image="images/background/register.jpg">
+	<div class="pattern height-resize">
+		<div class="container">
+			<h3 class="section-name">
 					<span>
 						Register
 					</span>
-				</h3><!-- /.section-name -->
-				<h2 class="section-title">
-					Sign Up for Retreat
-				</h2><!-- /.Section-title  -->
-				<div class="section-description">
-					Early registration ($75) - 11/13 to 12/18<br>
-					Regular registration ($90) - 12/19 to 1/8<br>
-					Late registration ($110) - 1/8 to 1/15<br>
-					<hr>
-					Child registration (ages 3-5) - $16.75<br>
-					Child registration (ages 6+) - $33.50<br>
-					<hr>
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSepd2_klipK8rLyEwuWOAbtivGr9yFJl3qno2DbVC72_QEDQQ/viewform?c=0&w=1"> <button type="button" class="btn btn-primary">Register</button> </a>
-					<br>
+			</h3><!-- /.section-name -->
+			<h2 class="section-title">
+				Sign Up for Retreat
+			</h2><!-- /.Section-title  -->
+			<div class="section-description">
+				Early registration ($75) - 11/13 to 12/18<br>
+				Regular registration ($90) - 12/19 to 1/8<br>
+				Late registration ($110) - 1/8 to 1/15<br>
+				<hr>
+				Child registration (ages 3-5) - $16.75<br>
+				Child registration (ages 6+) - $33.50<br>
+				<hr>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSepd2_klipK8rLyEwuWOAbtivGr9yFJl3qno2DbVC72_QEDQQ/viewform?c=0&w=1"> <button type="button" class="btn btn-primary btn-lg">Register</button> </a>
+				<br>
 
-				</div><!-- /.section-description -->
+			</div><!-- /.section-description -->
 
-				<div class="next-section">
-					<a class="go-to-contact"><span></span></a>
-				</div><!-- /.next-section -->
+			<div class="next-section">
+				<a class="go-to-contact"><span></span></a>
+			</div><!-- /.next-section -->
 
-			</div><!-- /.container -->
-		</div><!-- /.pattern -->
+		</div><!-- /.container -->
+	</div><!-- /.pattern -->
 
-	</section><!-- /#register -->
-	<!-- Register Section End -->
+</section><!-- /#register -->
+<!-- Register Section End -->
 
-	<!-- About Us Section -->
-	<section id="about" class="section-style parallax-bg" data-background-image="images/background/about-us.jpg">
+<!-- About Us Section -->
+<section id="about" class="section-style parallax-bg" data-background-image="images/background/about-us.jpg">
 
-		<div class="pattern height-resize"> 
-			<div class="container">
-				<h3 class="section-name">
+	<div class="pattern height-resize">
+		<div class="container">
+			<h3 class="section-name">
 					<span>
-						About Us
+						About the Speaker
 					</span>
-				</h3><!-- /.section-name -->
-				<h2 class="section-title">
-					Meet the Staff
-				</h2><!-- /.Section-title  -->
-				<p class="section-description">
-					Speaker Goes Here
-                </p><!-- /.section-description -->
+			</h3><!-- /.section-name -->
+			<h2 class="section-title">
+				Meet the Speaker
+			</h2><!-- /.Section-title  -->
+			<p class="section-description">
 
-				<div class="team-container">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="team-member">
-								<figure>
-									<img src="images/team/team-member-1.jpg" alt="Team Member">
-									<figcaption>
-										<p class="member-name">Hai</p>
-										<p class="designation">
-											Herp
-										</p><!-- /.designation -->
+			</p><!-- /.section-description -->
 
-									</figcaption>
-								</figure>
-								
-							</div><!-- /.team-member -->
-						</div><!-- /.col-sm-4 -->
+			<div class="team-container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="team-member">
+							<figure>
+								<img src="images/team/speaker.jpg" alt="Team Member">
+								<figcaption>
+									<p class="member-name"></p>
+									<p class="designation">
 
+									</p><!-- /.designation -->
 
-						<div class="col-sm-4">
-							<div class="team-member">
-								<figure>
-									<img src="images/team/team-member-2.jpg" alt="Team Member">
-									<figcaption>
-										<p class="member-name">
-                                            What's
-										</p><!-- /.member-name -->
-										<p class="designation">
-											Derp 
-										</p><!-- /.designation -->
+								</figcaption>
+							</figure>
 
-									</figcaption>
-								</figure>
-							</div><!-- /.team-member -->
-						</div><!-- /.col-sm-4 -->
+						</div><!-- /.team-member -->
+					</div><!-- /.col-sm-4 -->
+					<div class="col-sm-8">
+						<p>
+							<i>Speaker information will be available at a later date.</i>
+						</p>
+					</div>
+				</div>
+			</div><!-- /.team-container -->
+
+			<div class="next-section">
+				<a class="go-to-register"><span></span></a>
+			</div><!-- /.next-section -->
+
+		</div><!-- /.container -->
+	</div><!-- /.pattern -->
 
 
-						<div class="col-sm-4">
-							<div class="team-member">
-								<figure>
-									<img src="images/team/team-member-3.jpg" alt="Team Member">
-									<figcaption>
-										<p class="member-name">
-											Up
-										</p><!-- /.member-name -->
-										<p class="designation">
-											Durr 
-										</p><!-- /.designation -->
+</section><!-- /#about -->
+<!-- About Us Section End -->
 
-									</figcaption>
-								</figure>
-
-							</div><!-- /.team-member -->
-						</div><!-- /.col-sm-4 -->
-					</div><!-- /.row -->
-					
-				</div><!-- /.team-container -->
-
-				<div class="next-section">
-					<a class="go-to-register"><span></span></a>
-				</div><!-- /.next-section -->
-
-			</div><!-- /.container -->
-		</div><!-- /.pattern -->
-		
-		
-	</section><!-- /#about -->
-	<!-- About Us Section End -->
-
-		<!-- Contact Section -->
-		<section id="contact" class="section-style parallax-bg" data-background-image="images/background/contact.jpg">
-			<div class="pattern height-resize">
-				<div class="container">
-					<h3 class="section-name">
+<!-- Contact Section -->
+<section id="contact" class="section-style parallax-bg" data-background-image="images/background/contact.jpg">
+	<div class="pattern height-resize">
+		<div class="container">
+			<h3 class="section-name">
 						<span>
 							Contact
 						</span>
-					</h3><!-- /.section-name -->
-					<h2 class="section-title">
-						Get in Touch 
-					</h2><!-- /.Section-title  -->
-					<p class="section-description">
-						Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-					</p><!-- /.section-description -->
+			</h3><!-- /.section-name -->
+			<h2 class="section-title">
+				Get in Touch
+			</h2><!-- /.Section-title  -->
+			<p class="section-description">
+				Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+			</p><!-- /.section-description -->
 
-					
-                    <!--TODO Link to Facebook Pages/Website... any other suggestions?-->
-
-                    <!-- google map API -->
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-3">Address Goes Here</div>
-							<div class="col-sm-9" id="map"></div>
-						</div>
+			<hr>
+			<!-- google map API -->
+			<!--<head>-->
+			<!--</head>-->
+			<!--<body>-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<b>Georgia FFA-FCCLA Center</b><br>
+						720 FFA FHA Camp Rd.<br>
+						Covington, GA 30014
 					</div>
-					<script>
-                      function initMap() {
-                        var uluru = {lat: 33.4339275, lng: -83.8278857};
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                          zoom: 9,
-                          center: uluru,
-                          scrollwheel: false
-                        });
-                        var marker = new google.maps.Marker({
-                          position: uluru,
-                          map: map
-                        });
-                      }
-                    </script>
-                    <script async defer
-                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWN4JT0Paq3PoczWko0wT8Zcw14KWGj6Q&callback=initMap">
-                    </script>
-                    <!-- google map API end -->
+					<div class="col-sm-8" id="map"></div>
+				</div>
+			</div>
+			<script>
+			  function initMap() {
+				var uluru = {lat: 33.4339275, lng: -83.8278857};
+				var map = new google.maps.Map(document.getElementById('map'), {
+				  zoom: 9,
+				  center: uluru,
+				  scrollwheel: false
+				});
+				var marker = new google.maps.Marker({
+				  position: uluru,
+				  map: map
+				});
+			  }
+			</script>
+			<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWN4JT0Paq3PoczWko0wT8Zcw14KWGj6Q&callback=initMap">
+			</script>
+			<!-- google map API end -->
 
-					<div class="next-section">
-						<a class="go-to-page-top"><span></span></a>
-					</div><!-- /.next-section -->
+			<div class="next-section">
+				<a class="go-to-page-top"><span></span></a>
+			</div><!-- /.next-section -->
 
-				</div><!-- /.container -->
-			</div><!-- /.pattern -->
+		</div><!-- /.container -->
+	</div><!-- /.pattern -->
 
-		</section><!-- /#contact -->
-		<!-- Contact Section End -->
-
-
-
-		<!-- Footer Section -->
-		<footer id="footer-section">
-			<p class="copyright">
-				<a href="http://jcatlanta.org">Journey Church of Atlanta</a>
-			</p>
-		</footer>
-		<!-- Footer Section End -->
-
-		<!-- jQuery Library -->
-		<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
-		<!-- Modernizr js -->
-		<script type="text/javascript" src="assets/js/modernizr-2.8.0.min.js"></script>
-		<!-- Plugins -->
-		<script type="text/javascript" src="assets/js/plugins.js"></script>
-		<!-- Custom JavaScript Functions -->
-		<script type="text/javascript" src="assets/js/functions.js"></script>
-		<!-- jquery.parallax.js -->
-		<script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
-		<!-- Custom JavaScript Functions -->
-		<script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
+</section><!-- /#contact -->
+<!-- Contact Section End -->
 
 
-		<script type="text/javascript">
+
+<!-- Footer Section -->
+<footer id="footer-section">
+	<p class="copyright">
+		<a href="http://jcatlanta.org">Journey Church of Atlanta</a>
+	</p>
+</footer>
+<!-- Footer Section End -->
+
+<!-- jQuery Library -->
+<script type="text/javascript" src="assets/js/jquery-2.1.0.min.js"></script>
+<!-- Modernizr js -->
+<script type="text/javascript" src="assets/js/modernizr-2.8.0.min.js"></script>
+<!-- Plugins -->
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<!-- Custom JavaScript Functions -->
+<script type="text/javascript" src="assets/js/functions.js"></script>
+<!-- jquery.parallax.js -->
+<script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
+<!-- Custom JavaScript Functions -->
+<script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
+
+
+<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(window).load(function(){
 					$("#page-top").parallax("50%", 0.2);
@@ -363,6 +337,9 @@
                         video.width(800);
                     }
                     video.height(video.width() * 9 / 16);
+
+                    var map = $("#map");
+                    document.getElementById("map").style.width = map.width();
 				});
 
                 $(window).resize(function() {
@@ -379,6 +356,6 @@
 			})
 		</script>
 
-		
-	</body>
-	</html>
+
+</body>
+</html>
