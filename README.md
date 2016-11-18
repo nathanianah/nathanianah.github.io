@@ -5,6 +5,7 @@ _nathanianah.github.io_
 1. Staff Information (Speaker TBD)
 2. Create Video Carousel
 3. Select Background Images
+4. Make the footer pretty
 
 #####Team:
 * Nathania Nah
