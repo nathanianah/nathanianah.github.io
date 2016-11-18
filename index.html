@@ -254,30 +254,35 @@
 				Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
 			</p><!-- /.section-description -->
 
+			<hr>
 			<!-- google map API -->
 			<!--<head>-->
 			<!--</head>-->
 			<!--<body>-->
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4">Address Goes Here</div>
+					<div class="col-sm-4">
+						<b>Georgia FFA-FCCLA Center</b><br>
+						720 FFA FHA Camp Rd.<br>
+						Covington, GA 30014
+					</div>
 					<div class="col-sm-8" id="map"></div>
 				</div>
 			</div>
 			<script>
-                      function initMap() {
-                        var uluru = {lat: 33.4339275, lng: -83.8278857};
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                          zoom: 9,
-                          center: uluru,
-                          scrollwheel: false
-                        });
-                        var marker = new google.maps.Marker({
-                          position: uluru,
-                          map: map
-                        });
-                      }
-                    </script>
+			  function initMap() {
+				var uluru = {lat: 33.4339275, lng: -83.8278857};
+				var map = new google.maps.Map(document.getElementById('map'), {
+				  zoom: 9,
+				  center: uluru,
+				  scrollwheel: false
+				});
+				var marker = new google.maps.Marker({
+				  position: uluru,
+				  map: map
+				});
+			  }
+			</script>
 			<script async defer
 					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWN4JT0Paq3PoczWko0wT8Zcw14KWGj6Q&callback=initMap">
 			</script>
