@@ -22,10 +22,10 @@
 
 	<style>
 		#map {
-		height: 400px;
-		<!--width: 50%;-->
-		<!--margin-left: auto;-->
-		<!--margin-right: auto;-->
+            height: 400px;
+		    width: 50%;
+		    margin-left: auto;
+		    margin-right: auto;
 		}
 	</style>
 </head>
@@ -334,6 +334,9 @@
                         video.width(800);
                     }
                     video.height(video.width() * 9 / 16);
+
+                    var map = $("#map");
+                    document.getElementById("map").style.width = map.width();
 				});
 
                 $(window).resize(function() {
