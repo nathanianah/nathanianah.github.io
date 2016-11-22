@@ -141,7 +141,6 @@ a:focus{
 }
 .form-control,
 .btn{
-	background-color:transparent;
 
 	-webkit-border-radius:0;
 	   -moz-border-radius:0;
