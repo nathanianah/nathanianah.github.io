@@ -50,7 +50,7 @@ Tags: HTML, Template, Coming Soon, Kite
 /* 2 - Global Style
 ---------------------------------------------------------------------- */
 body{
-	font-family:'Roboto:400', sans-serif;
+	font-family:'Roboto', sans-serif;
 	font-size:18px;
 	font-weight:100;
 	color:#fff;
@@ -493,7 +493,7 @@ a:focus{
 	text-align:center;
 	font-size:28px;
 	font-weight:normal;
-	font-family:'Roboto', sans-serif;
+	font-family:'Roboto:400', sans-serif;
 	margin:0 0 0 0;
 	padding-bottom:30px;
 	position:relative;
