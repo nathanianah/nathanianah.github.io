@@ -126,7 +126,7 @@ a:focus{
 }
 .section-subtitle{
 	text-align:center;
-	font-size:28px;
+	font-size:21px;
 	font-weight:normal;
 	font-family:'Roboto', sans-serif;
 }
@@ -483,7 +483,7 @@ a:focus{
 ---------------------------------------------------------------------- */
 .site-title{
 	text-align:center;
-	font-size:66px;
+	font-size:50px;
 	font-family:'Rock Salt', cursive;
 	margin:0 0 0 0;
 	padding-bottom:30px;
@@ -491,7 +491,7 @@ a:focus{
 }
 .site-subtitle{
 	text-align:center;
-	font-size:28px;
+	font-size:21px;
 	font-weight:normal;
 	font-family:'Roboto:400', sans-serif;
 	margin:0 0 0 0;
@@ -518,7 +518,7 @@ a:focus{
 .date-title{
 	text-align:center;
 	font-weight:300;
-	font-size:40px;
+	font-size:30px;
 	font-family: 'Rock Salt', cursive;
 }
 #page-top .section-name span:before,
@@ -591,11 +591,12 @@ a:focus{
 }
 .time-until span{
 	color: #fff;
-	font-size:18px;
+	font-size:28px;
 	line-height:40px;
 	display:inline-block;
 	font-family:'Covered By Your Grace', cursive;
 	font-weight:600;
+	text-transform:uppercase;
 	padding: 0px 25px 10px;
 	position: relative;
 }
