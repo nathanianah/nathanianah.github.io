@@ -40,9 +40,7 @@ Tags: HTML, Template, Coming Soon, Kite
 
 /* 1 - Import Google Font
 ---------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Merienda');
-@import url('http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700');
-@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Covered+By+Your+Grace|Roboto|Rock+Salt');
 /* 1 - Import Google Font End 
 ---------------------------------------------------------------------- */
 
@@ -53,6 +51,8 @@ Tags: HTML, Template, Coming Soon, Kite
 ---------------------------------------------------------------------- */
 body{
 	font-family:'Roboto', sans-serif;
+	font-size:18px;
+	font-weight:100;
 	color:#fff;
 	-webkit-font-smoothing:antialiased;
 	-moz-osx-font-smoothing:grayscale;
@@ -126,11 +126,13 @@ a:focus{
 }
 .section-subtitle{
 	text-align:center;
-	font-weight:200;
 	font-size:50px;
+	font-family:'Roboto', sans-serif;
+	font-weight:100;
 }
 .section-description{
-	font-weight:300;
+	font-family:'Roboto', sans-serif;
+	font-weight:100;
 	text-align:center;
 	line-height:30px;
 }
@@ -482,7 +484,7 @@ a:focus{
 .site-title{
 	text-align:center;
 	font-size:66px;
-	font-family:'Merienda', cursive;
+	font-family:'Rock Salt', cursive;
 	margin:0 0 0 0;
 	padding-bottom:30px;
 	position:relative;
@@ -490,7 +492,8 @@ a:focus{
 .site-subtitle{
 	text-align:center;
 	font-size:36px;
-	font-family:'Merienda', cursive;
+	font-weight:100;
+	font-family:'Roboto', sans-serif;
 	margin:0 0 0 0;
 	padding-bottom:30px;
 	position:relative;
@@ -511,6 +514,13 @@ a:focus{
 }
 .site-subtitle:after{
 	bottom:2px;
+}
+.date-title{
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:300;
+	font-size:56px;
+	font-family: 'Rock Salt', cursive;
 }
 #page-top .section-name span:before,
 #page-top .section-name span:after{
