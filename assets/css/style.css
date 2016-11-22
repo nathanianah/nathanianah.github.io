@@ -527,7 +527,8 @@ a:focus{
 }
 .time-count-container{
 	min-height:300px;
-	margin-top:50px;
+	margin-top:10px;
+	margin-bottom:0px;
 }
 .time-box{
 	width:150px;
