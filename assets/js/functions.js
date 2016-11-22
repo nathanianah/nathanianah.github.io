@@ -64,7 +64,7 @@ jQuery(document).ready(function($) {
              'day': 13,
              'month': 1,
              'year': 2017,
-             'hour': 0,
+             'hour': 20,
              'min': 0,
              'sec': 0
          },
