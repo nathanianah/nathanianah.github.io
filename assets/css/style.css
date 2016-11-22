@@ -495,7 +495,7 @@ a:focus{
 	font-weight:normal;
 	font-family:'Roboto:400', sans-serif;
 	margin:0 0 0 0;
-	padding-bottom:30px;
+	padding-bottom:20px;
 	position:relative;
 }
 .site-subtitle:before,
@@ -594,7 +594,7 @@ a:focus{
 	font-size:18px;
 	line-height:40px;
 	display:inline-block;
-	font-family:'Rock Salt', cursive;
+	font-family:'Covered By Your Grace', cursive;
 	font-weight:600;
 	padding: 0px 25px 10px;
 	position: relative;
