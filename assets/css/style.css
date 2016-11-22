@@ -82,7 +82,9 @@ a:focus{
 	background-attachment: fixed;
 }
 .no-parallax-bg{
-	background: #7f8c8d; 
+	background: #7f8c8d;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
