@@ -79,9 +79,29 @@
 
 			<!-- Retreat Video -->
 			<br>
-			<div style="text-align: center; margin-bottom: 1em">
-				<iframe id="promovid" src="https://www.youtube.com/embed/Wlz4vFuNIxw?autoplay=1" frameborder="0" allowfullscreen></iframe>
-			</div>
+            <!-- Begin Carousel -->
+            <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                <!-- indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#videoCarousel" data-slide-to="0" class="active"> </li>
+                    <li data-target="#videoCarousel" data-slide-to="1"> </li>
+                </ol> <!-- End Indicators -->
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <!-- video -->
+                    <div class="item active" style="text-align: center; margin-bottom: 1em">
+                        <iframe id="promovid" src="https://www.youtube.com/embed/Wlz4vFuNIxw?autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    </div> <!-- End video -->
+
+                    <div class="item" style="text-align: center; margin-bottom: 1em">
+                        <iframe id="promovid2" src="https://www.youtube.com/embed/YFal-v7ENl0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div> <!-- End wrapper -->
+            </div> <!-- End Carousel -->
+
+            <!-- TIME UNTI -->
+
 			<hr>
 
 			<p class="time-until">
@@ -165,14 +185,14 @@
 				Sign Up for Retreat
 			</h2><!-- /.Section-title  -->
 			<div class="section-description">
-				<p class="bg-primary">Early registration ($75) — 11/13 to 12/18</p>
-				Regular registration ($90) — 12/19 to 1/8<br>
-				Late registration ($110) — 1/8 to 1/15<br>
+                <font color="gray"> <strike> Early registration ($75) — 11/13 to 12/18 </strike> </font> <br />
+                <b> Regular registration ($90) — 12/19 to 1/8 </b> <br>
+                <font color="gray"> Late registration ($110) — 1/8 to 1/15 </font> <br>
 				<hr>
                 Child registration ages 3-5 ($16.75) — thru 1/15<br>
                 Child registration ages 6+ ($33.50) — thru 1/15<br>
 				<hr>
-				<a class="btn btn-lg btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSepd2_klipK8rLyEwuWOAbtivGr9yFJl3qno2DbVC72_QEDQQ/viewform?c=0&w=1" target="_blank"> Register </a>
+                <a class="btn btn-lg btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSepd2_klipK8rLyEwuWOAbtivGr9yFJl3qno2DbVC72_QEDQQ/viewform?c=0&w=1" target="_blank">Register</a>
 				<br>
 
 			</div><!-- /.section-description -->
@@ -331,14 +351,19 @@
 					$("#register").parallax("50%", 0.2);
 
                     var video = $("#promovid");
+                    var video2 = $("#promovid2");
                     if ($(window).width() < 650) {
                         video.width($(window).width() - 40);
+                        video2.width($(window).width() - 40);
                     } else if ($(window).width() * 2 / 3 < 650 ) {
                         video.width(600);
+                        video2.width(600);
                     } else {
                         video.width(800);
+                        video2.width(800);
                     }
                     video.height(video.width() * 9 / 16);
+                    video2.height(video.width() * 9 / 16);
 
                     var map = $("#map");
                     document.getElementById("map").style.width = map.width();
