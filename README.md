@@ -4,6 +4,9 @@ _nathanianah.github.io_
 ####To Do:
 1. Staff Information (Speaker TBD)
 2. Create Video Carousel
+ * Fix indicators. Maybe move them down or make them appear on hover
+ * Consider a left and right button?
+ * Autoplay the next video
 3. Select Background Images
 4. Make the footer pretty
 
