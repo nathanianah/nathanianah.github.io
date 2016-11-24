@@ -44,6 +44,17 @@ Tags: HTML, Template, Coming Soon, Kite
 /* 1 - Import Google Font End 
 ---------------------------------------------------------------------- */
 
+//Jesse's Carousel
+.carousel-inner {
+    //margin-bottom:23px;
+}
+.carousel-indicators {
+    //bottom:-23px;
+}
+.carousel-inner>.item {
+    text-align: center;
+    margin-bottom: 1em
+}
 
 
 
@@ -223,118 +234,6 @@ a:focus{
 	opacity:1;
 }
 /* 2.1 - Next Section
------------------------------------------- */
-
-
-
-/* 2.2 - Social Button
------------------------------------------- */
-.social-btn-container{
-	text-align:center;
-	margin:50px auto 0 auto;
-}
-.social-btn-container .social-btn-box{
-	display:inline-block;
-	width:60px;
-	height:60px;
-
-	-webkit-transform:rotate(45deg);
-	   -moz-transform:rotate(45deg);
-	    -ms-transform:rotate(45deg);
-	     -o-transform:rotate(45deg);
-	        transform:rotate(45deg);
-
-	border:1px solid #fff;
-
-	-webkit-border-radius:5px;
-	   -moz-border-radius:5px;
-	    -ms-border-radius:5px;
-	     -o-border-radius:5px;
-	        border-radius:5px;
-
-	margin:15px;
-	position:relative;
-	overflow:hidden;
-}
-.social-btn-container .social-btn-box a{
-	color:#fff;
-	font-size:26px;
-	line-height:80px;
-	display:inline-block;
-	width:80px;
-	height:80px;
-	position:absolute;
-	top:-10px;
-	left:-10px;
-
-	-webkit-transform:rotate(-45deg);
-	   -moz-transform:rotate(-45deg);
-	    -ms-transform:rotate(-45deg);
-	     -o-transform:rotate(-45deg);
-	        transform:rotate(-45deg);
-}
-.social-btn-box,
-.social-btn-box a{
-	
-	-webkit-transition:all .25s;
-	   -moz-transition:all .25s;
-	    -ms-transition:all .25s;
-	     -o-transition:all .25s;
-	        transition:all .25s;
-}
-.social-btn-box:hover{
-	border-color:transparent;
-}
-.social-btn-box .facebook-btn:hover{
-	background:#3B5998;
-	color: #fff;
-}
-.social-btn-box .twitter-btn:hover{
-	background:#55ACEE;
-	color: #fff;
-}
-.social-btn-box .linkedin-btn:hover{
-	background:#0077b5;
-	color: #fff;
-}
-.social-btn-box .google-plus-btn:hover{
-	background:#db514f;
-	color: #fff;
-}
-.social-btn-box .youtube-btn:hover{
-	background:#cc181e;
-	color: #fff;
-}
-.social-btn-box .github-btn:hover{
-	background:#2b2e30;
-	color: #fff;
-}
-.social-btn-box .a:hover{
-	background:#3498db;
-	color: #fff;
-}
-/* 2.2 - Social Button
------------------------------------------- */
-
-
-/* 2.3 - Placeholder color
------------------------------------------- */
-.form-control::-webkit-input-placeholder {
-   color: #ffffff;
-}
-
-.form-control:-moz-placeholder { 
-   color: #ffffff;  
-}
-
-.form-control::-moz-placeholder { 
-   color: #ffffff;  
-}
-
-.form-control:-ms-input-placeholder{
-	color:#ffffff;
-}
-/* 2.3 - Placeholder color End 
 ------------------------------------------ */
 
 

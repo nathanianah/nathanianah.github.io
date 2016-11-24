@@ -80,27 +80,17 @@
 			<!-- Retreat Video -->
 			<br>
             <!-- Begin Carousel -->
-            <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+            <div id="videoCarousel" class="carousel slide" data-interval=false data-wrap=false data-ride="carousel">
                 <!-- indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#videoCarousel" data-slide-to="0" class="active"> </li>
-                    <li data-target="#videoCarousel" data-slide-to="1"> </li>
+                <ol id="videoCarouselIndicators" class="carousel-indicators">
                 </ol> <!-- End Indicators -->
 
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <!-- video -->
-                    <div class="item active" style="text-align: center; margin-bottom: 1em">
-                        <iframe id="promovid" src="https://www.youtube.com/embed/Wlz4vFuNIxw?autoplay=1" frameborder="0" allowfullscreen></iframe>
-                    </div> <!-- End video -->
-
-                    <div class="item" style="text-align: center; margin-bottom: 1em">
-                        <iframe id="promovid2" src="https://www.youtube.com/embed/YFal-v7ENl0" frameborder="0" allowfullscreen></iframe>
-                    </div>
+                <div id="videoCarouselInner" class="carousel-inner" role="listbox">
                 </div> <!-- End wrapper -->
             </div> <!-- End Carousel -->
 
-            <!-- TIME UNTI -->
+            <!-- TIME UNTIL -->
 
 			<hr>
 
@@ -342,46 +332,54 @@
 <script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
 <!-- Custom JavaScript Functions -->
 <script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
+<!--YouTube IFrame API-->
+<script src="https://www.youtube.com/iframe_api"></script>
 
 
 <script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(window).load(function(){
-					$("#page-top").parallax("50%", 0.2);
-					$("#register").parallax("50%", 0.2);
+    jQuery(document).ready(function($) {
+        $(window).load(function(){
+            $("#page-top").parallax("50%", 0.2);
+            $("#register").parallax("50%", 0.2);
 
-                    var video = $("#promovid");
-                    var video2 = $("#promovid2");
-                    if ($(window).width() < 650) {
-                        video.width($(window).width() - 40);
-                        video2.width($(window).width() - 40);
-                    } else if ($(window).width() * 2 / 3 < 650 ) {
-                        video.width(600);
-                        video2.width(600);
-                    } else {
-                        video.width(800);
-                        video2.width(800);
-                    }
-                    video.height(video.width() * 9 / 16);
-                    video2.height(video.width() * 9 / 16);
+            var video = $("#promovid");
+            var video2 = $("#promovid2");
+            if ($(window).width() < 650) {
+                video.width($(window).width() - 40);
+                video2.width($(window).width() - 40);
+            } else if ($(window).width() * 2 / 3 < 650 ) {
+                video.width(600);
+                video2.width(600);
+            } else {
+                video.width(800);
+                video2.width(800);
+            }
+            video.height(video.width() * 9 / 16);
+            video2.height(video.width() * 9 / 16);
 
-                    var map = $("#map");
-                    document.getElementById("map").style.width = map.width();
-				});
+            var map = $("#map");
+            document.getElementById("map").style.width = map.width();
+        });
 
-                $(window).resize(function() {
-                    var video = $("#promovid");
-                    if ($(window).width() < 650) {
-                        video.width($(window).width() - 40);
-                    } else if ($(window).width() * 2 / 3 < 650 ) {
-                        video.width(600);
-                    } else {
-                        video.width(800);
-                    }
-                    video.height(video.width() * 9 / 16);
-                });
-			})
-		</script>
+        $(window).resize(function() {
+            var video = $("#promovid");
+            if ($(window).width() < 650) {
+                video.width($(window).width() - 40);
+            } else if ($(window).width() * 2 / 3 < 650 ) {
+                video.width(600);
+            } else {
+                video.width(800);
+            }
+            video.height(video.width() * 9 / 16);
+        });
+    })
+
+    function onClick() {
+        var video = document.getElementById("promovid");
+        console.log(video);
+        video.pauseVideo();
+    }
+</script>
 
 
 </body>
