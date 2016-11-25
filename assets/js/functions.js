@@ -77,8 +77,7 @@ jQuery(document).ready(function($) {
 	/* Highlighting Date
 	-------------------------------------------------------------------*/
 
-//    var now = Date.now()
-    var now = new Date(2016, 11, 19);
+    var now = Date.now()
     if (earlyStart.getTime() <= now && now <= earlyEnd.getTime()) {
         var early = $('#earlyRegister');
         early.addClass("bg-primary");
@@ -91,9 +90,16 @@ jQuery(document).ready(function($) {
         var early = $('#earlyRegister');
         early.wrap("<strike></strike>");
         var regular = $('#regularRegister');
-        regualr.wrap("<strike></strike>");
+        regular.wrap("<strike></strike>");
         var late = $('#lateRegister');
         late.addClass("bg-primary");
+    } else {
+        var early = $('#earlyRegister');
+        early.wrap("<strike></strike>");
+        var regular = $('#regularRegister');
+        regular.wrap("<strike></strike>");
+        var late = $('#lateRegister');
+        late.wrap("<strike></strike>");
     }
 
 	/* Highlighting Date End
