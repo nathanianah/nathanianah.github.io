@@ -340,8 +340,10 @@
 <script type="text/javascript">
     jQuery(document).ready(function($) {
         $(window).load(function(){
-            $("#page-top").parallax("50%", 0.2);
-            $("#register").parallax("50%", 0.2);
+        	if (!isMobile) {
+                $("#page-top").parallax("50%", 0.2);
+                $("#register").parallax("50%", 0.2);
+            }
 
             var map = $("#map");
             document.getElementById("map").style.width = map.width();

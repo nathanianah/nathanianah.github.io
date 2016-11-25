@@ -90,6 +90,13 @@ a:focus{
 	width:100%;
 	background-size:cover;
 }
+.section-style-mobile{
+	background-attachment:inherit;
+	background-repeat:no-repeat;
+	margin:0 auto;
+	width:100%;
+	background-size:cover;
+}
 
 .pattern{
 	background:rgba(0,0,0,.5) url(../images/pattern.png);

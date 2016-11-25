@@ -42,10 +42,15 @@ if (contactImage) {
 };
 
 if (isMobile) {
-    jQuery('#page-top').removeClass("parallax-bg");
-    jQuery('#register').removeClass("parallax-bg");
-    jQuery('#about').removeClass("parallax-bg");
-    jQuery('#contact').removeClass("parallax-bg");
+    jQuery('#page-top').removeClass("parallax-bg section-style");
+    jQuery('#register').removeClass("parallax-bg section-style");
+    jQuery('#about').removeClass("parallax-bg section-style");
+    jQuery('#contact').removeClass("parallax-bg section-style");
+
+    jQuery('#page-top').addClass("section-style-mobile");
+    jQuery('#register').addClass("section-style-mobile");
+    jQuery('#about').addClass("section-style-mobile");
+    jQuery('#contact').addClass("section-style-mobile");
 }
 
 /* Background Images End
