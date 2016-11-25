@@ -11,7 +11,8 @@ var  contactImage = jQuery('#contact').data('background-image');
 //];
 var videoLinks = [
     "Wlz4vFuNIxw",
-    "YFal-v7ENl0"
+    "YFal-v7ENl0",
+    "H6MhKWXV_C4"
 ];
 var ytPlayers = [];
 var currentPlayer = 0;
@@ -118,14 +119,26 @@ function onYouTubeIframeAPIReady() {
 
     var indicators = $('#videoCarouselIndicators');
     var inner = $('#videoCarouselInner');
+    // Setting width and height
+    var wd;
+    if ($(window).width() < 650) {
+        wd = $(window).width() - 40;
+    } else if ($(window).width() * 2 / 3 < 650 ) {
+        wd = 600;
+    } else {
+        wd = 800
+    }
+    var ht = wd * 9 / 16;
     for (var i = 0; i < videoLinks.length; i++) {
         /* Icon Indicator */
-        var iconIndicator = jQuery('<li> </li>');
+        var iconIndicator = jQuery('<img> </img>');
         iconIndicator.attr({
             "data-target": "#videoCarousel",
             "data-slide-to": i.toString(),
             "class": i == 0 ? "active" : "",
             "id": "iconIndicator" + i.toString(),
+            "src": "https://img.youtube.com/vi/" + videoLinks[i] + "/0.jpg",
+            "height": 32,
         });
 
         /* Item div */
@@ -151,16 +164,6 @@ function onYouTubeIframeAPIReady() {
         item.append(playerDiv);
         inner.append(item);
 
-        // Setting width and height
-        var wd;
-        if ($(window).width() < 650) {
-            wd = $(window).width() - 40;
-        } else if ($(window).width() * 2 / 3 < 650 ) {
-            wd = 600;
-        } else {
-            wd = 800
-        }
-        var ht = wd * 9 / 16;
 
         // Creating youtube player
         var player = new YT.Player("promovid" + i.toString(), {
@@ -174,6 +177,20 @@ function onYouTubeIframeAPIReady() {
         ytPlayers.push(player);
     }
 
+    $(window).resize(function() {
+
+        for (var i = 0; i < videoLinks.length; i++) {
+            var video = $("#promovid" + i.toString());
+            if ($(window).width() < 650) {
+                video.width($(window).width() - 40);
+            } else if ($(window).width() * 2 / 3 < 650 ) {
+                video.width(600);
+            } else {
+                video.width(800);
+            }
+            video.height(video.width() * 9 / 16);
+        }
+    } );
 	/* Video Carousel End
 	-------------------------------------------------------------------*/
 }

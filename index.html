@@ -81,13 +81,14 @@
 			<br>
             <!-- Begin Carousel -->
             <div id="videoCarousel" class="carousel slide" data-interval=false data-wrap=false data-ride="carousel">
-                <!-- indicators -->
-                <ol id="videoCarouselIndicators" class="carousel-indicators">
-                </ol> <!-- End Indicators -->
 
                 <!-- Wrapper for slides -->
                 <div id="videoCarouselInner" class="carousel-inner" role="listbox">
                 </div> <!-- End wrapper -->
+
+				<!-- indicators -->
+				<ol id="videoCarouselIndicators" class="carousel-indicators">
+				</ol> <!-- End Indicators -->
             </div> <!-- End Carousel -->
 
             <!-- TIME UNTIL -->
@@ -342,36 +343,10 @@
             $("#page-top").parallax("50%", 0.2);
             $("#register").parallax("50%", 0.2);
 
-            var video = $("#promovid");
-            var video2 = $("#promovid2");
-            if ($(window).width() < 650) {
-                video.width($(window).width() - 40);
-                video2.width($(window).width() - 40);
-            } else if ($(window).width() * 2 / 3 < 650 ) {
-                video.width(600);
-                video2.width(600);
-            } else {
-                video.width(800);
-                video2.width(800);
-            }
-            video.height(video.width() * 9 / 16);
-            video2.height(video.width() * 9 / 16);
-
             var map = $("#map");
             document.getElementById("map").style.width = map.width();
         });
 
-        $(window).resize(function() {
-            var video = $("#promovid");
-            if ($(window).width() < 650) {
-                video.width($(window).width() - 40);
-            } else if ($(window).width() * 2 / 3 < 650 ) {
-                video.width(600);
-            } else {
-                video.width(800);
-            }
-            video.height(video.width() * 9 / 16);
-        });
     })
 
     function onClick() {

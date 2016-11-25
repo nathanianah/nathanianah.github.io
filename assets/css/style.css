@@ -45,15 +45,21 @@ Tags: HTML, Template, Coming Soon, Kite
 ---------------------------------------------------------------------- */
 
 //Jesse's Carousel
-.carousel-inner {
-    //margin-bottom:23px;
+.carousel {
+    //position: absolute;
 }
 .carousel-indicators {
-    //bottom:-23px;
+    position: relative;
+    bottom: 0;
 }
 .carousel-inner>.item {
     text-align: center;
-    margin-bottom: 1em
+    margin-bottom: 1em;
+}
+
+.carousel-indicators>.active{
+    height: 32px;
+    width: 43px;
 }
 
 
