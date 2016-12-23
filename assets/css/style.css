@@ -566,10 +566,13 @@ a:focus{
 	padding-top:20px;
 }
 .team-container .member-name {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 700;
 	margin: 0;
-	padding: 26px 10px 5px 10px;
+}
+.team-container .designation {
+    margin: 0;
+	padding: 20px 0px 0px 0px;
 }
 .team-container figcaption p{
 	font-size: 1.125em;
@@ -603,7 +606,7 @@ a:focus{
 	overflow: hidden;
 	position: relative;
 	width:245px;
-	height: 230px;
+	height: 245px;
 }
 .team-member .social-btn-container .social-btn-box{
 	position: absolute;
@@ -611,19 +614,19 @@ a:focus{
 }
 .team-member .social-btn-container .facebook-btn-container{
 	bottom: 220px;
-	right: 230px;
+	right: 245px;
 }
 .team-member .social-btn-container .twitter-btn-container{
 	bottom: 220px;
-	left: 230px;
+	left: 245px;
 }
 .team-member .social-btn-container .linkedin-btn-container{
 	top: 220px;
-	right: 230px;
+	right: 245px;
 }
 .team-member .social-btn-container .github-btn-container{
 	top: 220px;
-	left: 230px;
+	left: 245px;
 }
 
 .team-member:hover .social-btn-container .facebook-btn-container{
@@ -738,7 +741,7 @@ form.news-letter .btn:hover{
 	border-width: 12px;
 	border-color: rgba(52, 152, 219,1) transparent  transparent transparent;
 	left: 25px;
-	bottom: -24px;
+	bottom: 25px;
 }
 /* 6 - Register Section End 
 ---------------------------------------------------------------------- */

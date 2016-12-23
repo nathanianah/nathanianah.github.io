@@ -5,14 +5,8 @@ var  pageTopImage = jQuery('#page-top').data('background-image');
 var  aboutImage = jQuery('#about').data('background-image');
 var  registerImage = jQuery('#register').data('background-image');
 var  contactImage = jQuery('#contact').data('background-image');
-//var videoLinks = [
-//    "https://www.youtube.com/embed/Wlz4vFuNIxw",
-//    "https://www.youtube.com/embed/YFal-v7ENl0"
-//];
 var videoLinks = [
-    "Wlz4vFuNIxw",
-    "YFal-v7ENl0",
-    "H6MhKWXV_C4"
+    "HugNYijOWuI"
 ];
 var ytPlayers = [];
 var currentPlayer = 0;
