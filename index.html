@@ -53,6 +53,10 @@
 			<li><a href="#about">Speaker</a></li>
 			<li><a href="#contact">Contact & Location Information</a></li>
 		</ul> <!-- /.nav .navbar-nav -->
+		<ul class="nav navbar-nav">
+			<li><a href="http://jcatlanta.org" target="_blank">JCA Home</a></li>
+		</ul>
+
 	</nav> <!-- /.navbar-collapse  -->
 </div><!-- /#main-menu -->
 <!-- Main Menu End -->
@@ -77,11 +81,22 @@
 				Georgia FFA Center
 			</h2>
 
-			<!--&lt;!&ndash; Retreat Video &ndash;&gt;-->
-			<!--<br>-->
-			<!--<div style="text-align: center; margin-bottom: 1em">-->
-				<!--<iframe id="promovid" src="https://www.youtube.com/embed/Wlz4vFuNIxw?autoplay=1" frameborder="0" allowfullscreen></iframe>-->
-			<!--</div>-->
+			<!-- Retreat Video -->
+			<br>
+            <!-- Begin Carousel -->
+            <div id="videoCarousel" class="carousel slide" data-interval=false data-wrap=false data-ride="carousel">
+
+                <!-- Wrapper for slides -->
+                <div id="videoCarouselInner" class="carousel-inner" role="listbox">
+                </div> <!-- End wrapper -->
+
+				<!-- indicators -->
+				<ol id="videoCarouselIndicators" class="carousel-indicators">
+				</ol> <!-- End Indicators -->
+            </div> <!-- End Carousel -->
+
+            <!-- TIME UNTIL -->
+
 			<hr>
 
 			<p class="time-until">
@@ -165,14 +180,14 @@
 				Sign Up for Retreat
 			</h2><!-- /.Section-title  -->
 			<div class="section-description">
-				<p class="bg-primary">Early registration ($75) — 11/13 to 12/18</p>
-				Regular registration ($90) — 12/19 to 1/8<br>
-				Late registration ($110) — 1/8 to 1/15<br>
+                <p id="earlyRegister"> Early registration ($75) — 11/13 to 12/18 </p>
+                <p id="regularRegister"> Regular registration ($90) — 12/19 to 1/8 </p>
+                <p id="lateRegister" >Late registration ($110) — 1/8 to 1/15 </p>
 				<hr>
-                Child registration ages 3-5 ($16.75) — thru 1/15<br>
-                Child registration ages 6+ ($33.50) — thru 1/15<br>
+                <p>Child registration ages 3-5 ($16.75) — thru 1/15 </p>
+                <p> Child registration ages 6+ ($33.50) — thru 1/15 </p>
 				<hr>
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSepd2_klipK8rLyEwuWOAbtivGr9yFJl3qno2DbVC72_QEDQQ/viewform?c=0&w=1" target="_blank"> <button type="button" class="btn btn-primary btn-lg">Register</button> </a>
+                <a class="btn btn-lg btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSepd2_klipK8rLyEwuWOAbtivGr9yFJl3qno2DbVC72_QEDQQ/viewform?c=0&w=1" target="_blank">Register</a>
 				<br>
 
 			</div><!-- /.section-description -->
@@ -211,10 +226,10 @@
 							<figure>
 								<img src="images/team/speaker.jpg" alt="Team Member">
 								<figcaption>
-									<p class="member-name"></p>
 									<p class="designation">
-
+										Bishop
 									</p><!-- /.designation -->
+									<p class="member-name">Wellington Boone</p>
 
 								</figcaption>
 							</figure>
@@ -223,8 +238,13 @@
 					</div><!-- /.col-sm-4 -->
 					<div class="col-sm-8">
 						<p>
-							<i>Speaker information will be available at a later date.</i>
+							Bishop Wellington Boone is a respected Christian leader with an unwavering commitment to
+							Jesus Christ. He is willing to stand on the truth of biblical principles regardless of
+							personal cost. For more than 40 years, he has quietly inspired and trained Christian men and
+							women to become leaders with Christ-like character, faithfulness to their marriages, and a
+							zeal to transform society.
 						</p>
+						<p><a href="http://wellingtonboone.com" target="_blank">Learn more here</a></p>
 					</div>
 				</div>
 			</div><!-- /.team-container -->
@@ -322,41 +342,30 @@
 <script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
 <!-- Custom JavaScript Functions -->
 <script type="text/javascript" src="assets/js/jquery.ajaxchimp.min.js"></script>
+<!--YouTube IFrame API-->
+<script src="https://www.youtube.com/iframe_api"></script>
 
 
 <script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(window).load(function(){
-					$("#page-top").parallax("50%", 0.2);
-					$("#register").parallax("50%", 0.2);
+    jQuery(document).ready(function($) {
+        $(window).load(function(){
+        	if (!isMobile) {
+                $("#page-top").parallax("50%", 0.2);
+                $("#register").parallax("50%", 0.2);
+            }
 
-                    var video = $("#promovid");
-                    if ($(window).width() < 650) {
-                        video.width($(window).width() - 40);
-                    } else if ($(window).width() * 2 / 3 < 650 ) {
-                        video.width(600);
-                    } else {
-                        video.width(800);
-                    }
-                    video.height(video.width() * 9 / 16);
+            var map = $("#map");
+            document.getElementById("map").style.width = map.width();
+        });
 
-                    var map = $("#map");
-                    document.getElementById("map").style.width = map.width();
-				});
+    })
 
-                $(window).resize(function() {
-                    var video = $("#promovid");
-                    if ($(window).width() < 650) {
-                        video.width($(window).width() - 40);
-                    } else if ($(window).width() * 2 / 3 < 650 ) {
-                        video.width(600);
-                    } else {
-                        video.width(800);
-                    }
-                    video.height(video.width() * 9 / 16);
-                });
-			})
-		</script>
+    function onClick() {
+        var video = document.getElementById("promovid");
+        console.log(video);
+        video.pauseVideo();
+    }
+</script>
 
 
 </body>

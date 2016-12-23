@@ -44,6 +44,23 @@ Tags: HTML, Template, Coming Soon, Kite
 /* 1 - Import Google Font End 
 ---------------------------------------------------------------------- */
 
+//Jesse's Carousel
+.carousel {
+    //position: absolute;
+}
+.carousel-indicators {
+    position: relative;
+    bottom: 0;
+}
+.carousel-inner>.item {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.carousel-indicators>.active{
+    height: 32px;
+    width: 43px;
+}
 
 
 
@@ -68,6 +85,13 @@ a:focus{
 .section-style{
 	background-attachment:inherit;
 	background-position:50% 0;
+	background-repeat:no-repeat;
+	margin:0 auto;
+	width:100%;
+	background-size:cover;
+}
+.section-style-mobile{
+	background-attachment:inherit;
 	background-repeat:no-repeat;
 	margin:0 auto;
 	width:100%;
@@ -223,118 +247,6 @@ a:focus{
 	opacity:1;
 }
 /* 2.1 - Next Section
------------------------------------------- */
-
-
-
-/* 2.2 - Social Button
------------------------------------------- */
-.social-btn-container{
-	text-align:center;
-	margin:50px auto 0 auto;
-}
-.social-btn-container .social-btn-box{
-	display:inline-block;
-	width:60px;
-	height:60px;
-
-	-webkit-transform:rotate(45deg);
-	   -moz-transform:rotate(45deg);
-	    -ms-transform:rotate(45deg);
-	     -o-transform:rotate(45deg);
-	        transform:rotate(45deg);
-
-	border:1px solid #fff;
-
-	-webkit-border-radius:5px;
-	   -moz-border-radius:5px;
-	    -ms-border-radius:5px;
-	     -o-border-radius:5px;
-	        border-radius:5px;
-
-	margin:15px;
-	position:relative;
-	overflow:hidden;
-}
-.social-btn-container .social-btn-box a{
-	color:#fff;
-	font-size:26px;
-	line-height:80px;
-	display:inline-block;
-	width:80px;
-	height:80px;
-	position:absolute;
-	top:-10px;
-	left:-10px;
-
-	-webkit-transform:rotate(-45deg);
-	   -moz-transform:rotate(-45deg);
-	    -ms-transform:rotate(-45deg);
-	     -o-transform:rotate(-45deg);
-	        transform:rotate(-45deg);
-}
-.social-btn-box,
-.social-btn-box a{
-	
-	-webkit-transition:all .25s;
-	   -moz-transition:all .25s;
-	    -ms-transition:all .25s;
-	     -o-transition:all .25s;
-	        transition:all .25s;
-}
-.social-btn-box:hover{
-	border-color:transparent;
-}
-.social-btn-box .facebook-btn:hover{
-	background:#3B5998;
-	color: #fff;
-}
-.social-btn-box .twitter-btn:hover{
-	background:#55ACEE;
-	color: #fff;
-}
-.social-btn-box .linkedin-btn:hover{
-	background:#0077b5;
-	color: #fff;
-}
-.social-btn-box .google-plus-btn:hover{
-	background:#db514f;
-	color: #fff;
-}
-.social-btn-box .youtube-btn:hover{
-	background:#cc181e;
-	color: #fff;
-}
-.social-btn-box .github-btn:hover{
-	background:#2b2e30;
-	color: #fff;
-}
-.social-btn-box .a:hover{
-	background:#3498db;
-	color: #fff;
-}
-/* 2.2 - Social Button
------------------------------------------- */
-
-
-/* 2.3 - Placeholder color
------------------------------------------- */
-.form-control::-webkit-input-placeholder {
-   color: #ffffff;
-}
-
-.form-control:-moz-placeholder { 
-   color: #ffffff;  
-}
-
-.form-control::-moz-placeholder { 
-   color: #ffffff;  
-}
-
-.form-control:-ms-input-placeholder{
-	color:#ffffff;
-}
-/* 2.3 - Placeholder color End 
 ------------------------------------------ */
 
 
@@ -654,10 +566,13 @@ a:focus{
 	padding-top:20px;
 }
 .team-container .member-name {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: 700;
 	margin: 0;
-	padding: 26px 10px 5px 10px;
+}
+.team-container .designation {
+    margin: 0;
+	padding: 20px 0px 0px 0px;
 }
 .team-container figcaption p{
 	font-size: 1.125em;
@@ -691,7 +606,7 @@ a:focus{
 	overflow: hidden;
 	position: relative;
 	width:245px;
-	height: 230px;
+	height: 245px;
 }
 .team-member .social-btn-container .social-btn-box{
 	position: absolute;
@@ -699,19 +614,19 @@ a:focus{
 }
 .team-member .social-btn-container .facebook-btn-container{
 	bottom: 220px;
-	right: 230px;
+	right: 245px;
 }
 .team-member .social-btn-container .twitter-btn-container{
 	bottom: 220px;
-	left: 230px;
+	left: 245px;
 }
 .team-member .social-btn-container .linkedin-btn-container{
 	top: 220px;
-	right: 230px;
+	right: 245px;
 }
 .team-member .social-btn-container .github-btn-container{
 	top: 220px;
-	left: 230px;
+	left: 245px;
 }
 
 .team-member:hover .social-btn-container .facebook-btn-container{
@@ -826,7 +741,7 @@ form.news-letter .btn:hover{
 	border-width: 12px;
 	border-color: rgba(52, 152, 219,1) transparent  transparent transparent;
 	left: 25px;
-	bottom: -24px;
+	bottom: 25px;
 }
 /* 6 - Register Section End 
 ---------------------------------------------------------------------- */
