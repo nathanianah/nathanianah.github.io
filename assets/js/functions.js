@@ -6,7 +6,8 @@ var  aboutImage = jQuery('#about').data('background-image');
 var  registerImage = jQuery('#register').data('background-image');
 var  contactImage = jQuery('#contact').data('background-image');
 var videoLinks = [
-    "HugNYijOWuI"
+    "HugNYijOWuI",
+    "G2CbGo-ENaw"
 ];
 var ytPlayers = [];
 var currentPlayer = 0;
